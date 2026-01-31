@@ -1,0 +1,122 @@
+/* ---------------------- CONTENIDO DE POLITICAS ---------------------- */
+.politicas {
+  max-width: 900px;
+  margin: 50px auto 80px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* TITULOS */
+.politicas h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #9f07ba;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.politicas h2.subtitulo {
+  font-size: 28px;
+  color: #9f07ba;
+  margin-top: 2em;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.politicas h2.subtitulo::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background-color: #9f07ba;
+  border-radius: 2px;
+}
+
+/* PARRAFOS */
+.politicas p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* LISTAS ENUMERADAS SOLO EN POLITICAS */
+.politicas ul {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: li-counter; /* reinicia contador por lista */
+}
+
+.politicas ul li {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.politicas ul li::before {
+  content: counter(li-counter);
+  counter-increment: li-counter;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #9f07ba;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ENLACES */
+.politicas a {
+  color: #9f07ba;
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    text-decoration 0.3s ease;
+}
+
+.politicas a:hover {
+  color: #6c057a;
+  text-decoration: underline;
+}
+
+/* SECCIONES */
+.politicas section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+  .politicas h1 {
+    font-size: 36px;
+  }
+
+  .politicas h2.subtitulo {
+    font-size: 24px;
+  }
+
+  .politicas ul li {
+    padding-left: 50px;
+    font-size: 16px;
+  }
+
+  .politicas ul li::before {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}

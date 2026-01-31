@@ -5,6 +5,7 @@
         padding: 0;
         margin: 0;
     }
+
     footer {
         position: relative;
         bottom: 0;
@@ -60,8 +61,9 @@
         <div class="row">
             <div class="col-md-3 contDatos">
                 <h4 class="datosContactos">DIRECCIÓN</h4><br>
-                <p class="informacion"><i class="bi bi-geo-alt"></i>Juan Lavalle N9 - 461
-                    y Nicolás Aguilera</p>
+                <p class="informacion"><i class="bi bi-geo-alt"></i>País: Ecuador
+
+                    Calle, Juan Lavalle N9-461, Quito 170803</p>
                 <h4 class="datosContactos">CORREO</h4><br>
                 <p class="informacion"> <i class="bi bi-envelope"></i> fundesotec@outlook.com</p>
                 <p class="informacion"> <i class="bi bi-envelope"></i> fundesotec.osfl@fundesotec.org</p>
@@ -77,10 +79,11 @@
             <div class="col-md-3 contDatos">
                 <h4 class="datosContactos">HORARIO DE ATENCIÓN</h4><br>
                 <p class="informacion"> <i class="bi bi-ethernet"></i> LUNES A VIERNES</p>
-                <p class="informacion">De 8:00 a. m. a 4:30 p. m.</p>
+                <p class="informacion">De 8:00 a. m. a 4:30 p. m.</p><br><br>
+                <a href="index.php?page=Vista/Politicas.html" class="PoliticasPrivacidad">Políticas de Privacidad</a>
             </div>
             <hr>
-            <h2 class="politicas">© 2018 - 2025 <span>Fundesotec</span>. Todos los derechos reservados</h2>
+            <h2 class="derechos">© 2018 - 2026 <span>Fundesotec</span>. Todos los derechos reservados</h2>
         </div>
     </div>
 </section>
