@@ -1,112 +1,136 @@
-/* '++++++++++++++++++++++++++++++++++inicio estilos de encabezado nabvar++++++++++++++++++++++++++++++ */
+/* =========================================================
+   CONFIGURACIÓN GLOBAL
+   Aplica a todo el sitio
+========================================================= */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina rellenos por defecto */
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño */
+  font-family: Arial, Helvetica, sans-serif; /* Fuente global */
 }
 
-/* estilos de navbar */
-
+/* =========================================================
+   ESTILOS DE NAVBAR
+========================================================= */
 .navbar {
-  background-color: rgb(159, 7, 186);
-  color: white;
-  margin-right: 20px;
-  font-size: 20px;
-  position: fixed;
-  top: 0;
+  background-color: rgb(159, 7, 186); /* Color morado institucional */
+  color: white; /* Texto blanco */
+  margin-right: 20px; /* Separación lateral */
+  font-size: 20px; /* Tamaño del texto */
+  position: fixed; /* Navbar fijo */
+  top: 0; /* Pegado arriba */
   left: 0;
-  width: 100%;
-  z-index: 1000;
+  width: 100%; /* Ancho completo */
+  z-index: 1000; /* Encima del contenido */
 }
 
+/* Enlaces del navbar */
 .navbar a {
-  color: white;
+  color: white; /* Texto blanco */
 }
 
+/* Hover de enlaces del navbar */
 .navbar a:hover {
-  color: rgb(223, 164, 234);
+  color: rgb(223, 164, 234); /* Morado claro */
 }
 
+/* =========================================================
+   SLOGAN SUPERIOR
+========================================================= */
 .slogan span {
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
+  color: black; /* Color del separador | */
+  font-size: 30px; /* Tamaño grande */
+  font-weight: bold; /* Negrita */
 }
 
 .slogan {
-  text-shadow: 2px 2px 2px rgb(25, 25, 26);
-}
-/* '++++++++++++++++++++++++++++++++++ Fin estilos de encabezado nabvar ++++++++++++++++++++++++++++++ */
-/* '++++++++++++++++++++++++++++++++++ inicio estilos de pie de pagina footer++++++++++++++++++++++++++++++ */
-.contenedorFooter {
-  background-color: white;
-  color: rgb(10, 10, 10);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 15px;
-  padding-top: 30px;
+  text-shadow: 2px 2px 2px rgb(25, 25, 26); /* Sombra de texto */
 }
 
+/* =========================================================
+   ESTILOS DE FOOTER
+========================================================= */
+.contenedorFooter {
+  background-color: white; /* Fondo blanco */
+  color: rgb(10, 10, 10); /* Texto oscuro */
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  padding-top: 30px; /* Espaciado superior */
+}
+
+/* Datos de contacto destacados */
 .datosContactos {
-  color: rgb(159, 7, 186);
+  color: rgb(159, 7, 186); /* Morado */
   font-weight: bold;
 }
 
+/* Contenedor de datos */
 .contDatos {
   margin-left: 100px;
 }
 
+/* Contenedor de redes sociales */
 .ContenedorRedes {
   background-color: rgb(159, 7, 186);
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+/* Enlaces redes */
 .redsocial1 a {
   margin: 0;
 }
 
+/* Icono circular redes */
 .redsocial1 {
   width: 50px;
-  /* Ajuste o valor conforme necessário */
   height: 50px;
-  border-radius: 50%;
+  border-radius: 50%; /* Forma circular */
   background-color: rgb(247, 249, 249);
   margin: 10px;
 }
 
+/* Hover icono redes */
 .redsocial1:hover {
   background-color: rgb(104, 4, 129);
 }
 
+/* Iconos redes */
 .redesSociales a {
   color: rgb(159, 7, 186);
   text-decoration: none;
   font-size: 30px;
 }
 
+/* Hover redes */
 .redesSociales a:hover {
   color: rgb(249, 243, 243);
 }
 
+/* Información general */
 .informacion {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
 }
+
+/* Botón políticas de privacidad */
 .PoliticasPrivacidad {
   text-decoration: none;
   color: rgb(159, 7, 186);
   font-weight: bold;
-  border: 20px;
   background-color: white;
   border: solid 2px rgb(159, 7, 186);
   padding: 10px;
   border-radius: 20px;
 }
+
+/* Hover políticas */
 .PoliticasPrivacidad:hover {
   background-color: rgb(159, 7, 186);
   color: white;
 }
+
+/* Derechos reservados */
 .derechos {
   text-align: center;
   margin-top: 15px;
@@ -115,30 +139,34 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Texto resaltado derechos */
 .derechos span {
   font-weight: bold;
   color: darkgoldenrod;
 }
-/* Fondo morado del menú Servicios */
+
+/* =========================================================
+   DROPDOWN SERVICIOS
+========================================================= */
 .dropdown-menu {
-  background-color: rgb(159, 7, 186); /* morado */
+  background-color: rgb(159, 7, 186); /* Fondo morado */
   border: none;
   border-radius: 8px;
 }
 
-/* Texto blanco */
+/* Items dropdown */
 .dropdown-menu .dropdown-item {
   color: #ffffff;
   font-weight: 500;
 }
 
-/* Hover: fondo un poco más oscuro y texto blanco */
+/* Hover dropdown */
 .dropdown-menu .dropdown-item:hover {
-  background-color: rgb(219, 100, 240); /* morado más oscuro */
+  background-color: rgb(219, 100, 240);
   color: #ffffff;
 }
 
-/* Quitar efecto azul por defecto de Bootstrap */
+/* Estado activo dropdown */
 .dropdown-menu .dropdown-item:active {
   background-color: #3a006f;
   color: #ffffff;

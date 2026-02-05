@@ -1,4 +1,17 @@
-/* -------------------- HERO SECTION -------------------- */
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+========================================================= */
+
+/* Tipografía global */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HERO / INICIO NOSOTROS
+========================================================= */
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -8,7 +21,6 @@
   height: 60vh;
 }
 
-/* Inicio Nosotros */
 .inicioNosotros {
   position: relative;
   background-image: url(../Img/Nosotros/InicioNosotros.png);
@@ -19,10 +31,7 @@
 
 .full-width {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   padding-top: 15%;
   background-color: rgba(14, 14, 14, 0.5);
 }
@@ -50,7 +59,10 @@
   background-color: #df07db;
 }
 
-/* -------------------- QUIÉNES SOMOS -------------------- */
+/* =========================================================
+   ¿QUIÉNES SOMOS?
+========================================================= */
+
 .tituloQSomos {
   margin-bottom: 10px;
   font-family: "Lobster", serif;
@@ -70,18 +82,20 @@
   border-radius: 35px;
 }
 
-/* -------------------- MISIÓN Y VISIÓN -------------------- */
+/* =========================================================
+   MISIÓN Y VISIÓN
+========================================================= */
+
 .contMisionvicion {
-  background-image: url(../Img/Bibliotecas1.jpg);
+  background-image: url(../Img/Nosotros/Bibliotecas1.jpg);
 }
 
 .SubContMisionVicion {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding: 60px 20px 20px;
   font-size: 20px;
   color: white;
-  box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
   background-color: rgba(164, 9, 164, 0.9);
+  box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
 }
 
 .contMisionvicion h3 {
@@ -94,10 +108,12 @@
   text-align: justify;
 }
 
-/* -------------------- FUNDESOTEC 7 AÑOS -------------------- */
+/* =========================================================
+   FUNDESOTEC – 7 AÑOS
+========================================================= */
+
 .contenedor7añosFundesotec {
-  padding-top: 50px;
-  padding-bottom: 3%;
+  padding: 50px 0 3%;
 }
 
 .contenedor7añosFundesotec h3 {
@@ -116,7 +132,10 @@
   border-radius: 35px;
 }
 
-/* -------------------- GALERÍA DE AYUDAS SOCIALES -------------------- */
+/* =========================================================
+   GALERÍA DE AYUDAS SOCIALES
+========================================================= */
+
 .ContGaleriaDeImagenes img {
   width: 100%;
   height: 130%;
@@ -129,15 +148,18 @@
   filter: brightness(100%);
 }
 
-.ContGaleriaDeImagenes h2 {
-  font-weight: bold;
-}
-
 .subContGaleriaDeImagenes {
   margin-bottom: 50px;
 }
 
-/* -------------------- REVISTA FUNDESOTEC -------------------- */
+.ContGaleriaDeImagenes h2 {
+  font-weight: bold;
+}
+
+/* =========================================================
+   REVISTA FUNDESOTEC
+========================================================= */
+
 .contenedorRevista {
   text-align: justify;
   font-size: 22px;
@@ -146,7 +168,6 @@
 
 .contenedorRevista h3 {
   text-align: center;
-  color: rgb(11, 11, 11);
   font-weight: bold;
 }
 
@@ -159,13 +180,12 @@
 .contenedorRevista a {
   display: inline-block;
   padding: 2px 15px;
-  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
   color: rgb(159, 7, 186);
-  text-decoration: none;
-  font-size: 25px;
   border: solid 4px rgb(159, 7, 186);
   border-radius: 35px;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 .contenedorRevista a:hover {
@@ -173,34 +193,14 @@
   color: #fff;
 }
 
-/* -------------------- DR. PORFIRIO JIMÉNEZ -------------------- */
-.contDrPorfilioJ {
-  background-image: url(../Img/Bibliotecas1.jpg);
-  text-align: justify;
-  font-size: 20px;
-}
+/* =========================================================
+   FINES INSTITUCIONALES
+========================================================= */
 
-.subcontDrPorfilioJ {
-  padding-top: 100px;
-  padding-bottom: 5px;
-  font-size: 20px;
-  color: white;
-  box-shadow: 0 2px 5px rgba(240, 2, 2, 0.6);
-  background-color: rgba(97, 93, 97, 0.9);
-}
-
-.contDrPorfilioJ img {
-  width: 70%;
-  height: 90%;
-  border-radius: 50%;
-}
-
-/* -------------------- FINES INSTITUCIONALES -------------------- */
 .NoticiasInicio h1 {
   font-weight: bold;
 }
 
-/* GRID TARJETAS */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -211,7 +211,7 @@
 }
 
 .fin-card {
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -239,17 +239,14 @@
 h2.subtitulo {
   text-align: center;
   font-size: 22px;
-  color: #333;
   margin: 10px 0;
 }
 
 .fin-card p {
-  color: #555;
   font-size: 15px;
   line-height: 1.5;
 }
 
-/* Colores por tipo de fin institucional */
 .fin-desarrollo {
   background-color: #dcfcdc;
 }
@@ -270,36 +267,274 @@ h2.subtitulo {
 }
 .fin-agricultura {
   background-color: #d8f8d8;
-  width: 100%;
   grid-column: 1 / -1;
 }
 
-/* -------------------- MEDIA QUERIES -------------------- */
-@media (max-width: 767px) {
+/* =========================================================
+   ESTRUCTURA FUNDESOTEC – MAPA DIRECTIVOS
+========================================================= */
+
+.contEstructura {
+  margin: 3%;
+}
+
+.contEstructura h1 {
+  font-family: "Lobster", serif;
+  font-size: 50px;
+  color: #7a39a0;
+}
+
+.contenedorDirectivosMapa {
+  margin: 60px auto;
+  position: relative;
+}
+
+.card-mapa {
+  background: #ffffff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  margin: 20px auto;
+  max-width: 320px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card-mapa:hover {
+  transform: translateY(-6px);
+}
+
+.card-principal,
+.card-secundario {
+  border: 3px solid rgb(202, 11, 235);
+}
+
+.nombre-directivo {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+.cargo {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(202, 11, 235);
+  text-align: center;
+  font-weight: bold;
+}
+
+.linea-vertical {
+  width: 3px;
+  height: 40px;
+  background-color: rgb(202, 11, 235);
+  margin: 0 auto;
+}
+
+.contenedorDirectivosMapa .row:last-child {
+  position: relative;
+}
+
+.contenedorDirectivosMapa .row:last-child::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  background-color: rgb(202, 11, 235);
+  transform: translateX(-50%);
+}
+
+.contenedorJimenes,
+.contenedorMachuca,
+.contenedorTaipe {
+  background-color: rgb(202, 11, 235);
+  padding: 9px 8px;
+  margin: 4px;
+}
+
+.contenedorJimenes:hover,
+.contenedorMachuca:hover,
+.contenedorTaipe:hover {
+  background-color: rgb(139, 16, 160);
+  box-shadow: 20px 20px 20px #373636;
+}
+
+/* =========================================================
+   PERFIL DIRECTIVO (CARDS GRANDES)
+========================================================= */
+
+.perfil-directivo {
+  margin: 60px 0;
+}
+
+.card-perfil {
+  display: flex;
+  gap: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  align-items: center;
+}
+
+.card-perfil.reverse {
+  flex-direction: row-reverse;
+}
+
+.perfil-img img {
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.perfil-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.cargo-perfil {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(202, 11, 235);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.perfil-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* =========================================================
+   DR. PORFIRIO JIMÉNEZ
+========================================================= */
+
+.contDrPorfilioJ {
+  background-image: url(../Img/Bibliotecas1.jpg);
+  font-size: 20px;
+  text-align: justify;
+}
+
+.subcontDrPorfilioJ {
+  padding: 100px 20px 5px;
+  background-color: rgba(97, 93, 97, 0.9);
+  color: #fff;
+}
+
+.contDrPorfilioJ img {
+  width: 70%;
+  border-radius: 50%;
+}
+
+/* =========================================================
+   RESPONSIVE – DISPOSITIVOS MÓVILES
+========================================================= */
+
+@media (max-width: 768px) {
   * {
-    font-size: 12px;
+    font-size: 18px;
   }
-
-  .ContGaleriaDeImagenes img {
+  .hero {
+    height: auto;
+    padding: 80px 15px;
+  }
+  .tituloQSomos {
+    margin-top: 10%;
+  }
+  /* letras pequeñas para movil  */
+  .tituloQSomos,
+  .SubContMisionVicion h3,
+  .contenedor7añosFundesotec h3,
+  .subContGaleriaDeImagenes h3,
+  .subContenedorRevista h3,
+  .NoticiasInicio h1,
+  .subtitulo,
+  .fin-desarrollo h3,
+  .fin-educacion h3,
+  .fin-alimentaria h3,
+  .fin-salud h3,
+  .fin-emprendimientos h3,
+  .fin-tecnologia h3,
+  .subcontDrPorfilioJ h3,
+  .perfil-info h3{
+    font-size: 20px;
+  }
+ 
+  .parrafoNosotros,
+  .SubContMisionVicion p
+  .contenedor7añosFundesotec p,
+  .subContGaleriaDeImagenes p,
+  .subContenedorRevista p,
+  .fin-desarrollo p,
+  .fin-desarrollo li,
+  .subcontDrPorfilioJ p,
+  .perfil-info p {
+    font-size: 15px;
+  }
+  .imgQuinesSomos img,
+  .img7añosFundesotec img{
     width: 90%;
-    height: 80%;
+  }
+  /* ----------------------------------------------------- */
+  .inicioNosotros p {
+    font-size: 20px;
+  }
+  .inicioNosotros p span {
+    font-size: 24px;
+  }
+  .tituloQSomos {
+    font-size: 32px;
+  }
+  .parrafoNosotros {
+    font-size: 16px;
   }
 
-  .subContGaleriaDeImagenes {
-    margin-bottom: 0;
-  }
-
-  .contenedor7añosFundesotec .nuestraTrayectoria {
-    font-size: 12px;
-    padding: 9px;
-  }
-
-  .contenedorRevista a {
-    font-size: 12px;
-    padding: 9px;
+  .imgQuinesSomos img,
+  .img7añosFundesotec img,
+  .contenedorRevista img,
+  .contDrPorfilioJ img {
+    width: 100%;
+    height: auto;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
+  }
+  /* galerias  */
+  .ContGaleriaDeImagenes img {
+    width: 90%;
+    height: 110%;
+  }
+  /* revista */
+  .contenedorRevista img {
+    width: 50%;
+    height: 90%;
+  }
+  .contenedorRevista a {
+    font-size: 18px;
+  }
+  .card-perfil,
+  .card-perfil.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .perfil-img img {
+    width: 180px;
+  }
+  .perfil-info p {
+    text-align: left;
+  }
+  /* doctor PorFilio */
+  .contDrPorfilioJ img {
+    width: 30%;
+    border-radius: 50%;
   }
 }
